@@ -11,9 +11,4 @@ This script:
 Reason
 ------
 
-The reason for this script was so that I could stream a file from my server while the server was 
-still downloading it.   To stream the file it requires that the server report the full file size.  
-The issue with wget by itself is that it doens't initialize the size of the file before it starts 
-downloading, instead the file size increases _as_ it is downloading.  This script fixes that so
-I can use my servers fast connection to download it and stream it from my server while it is 
-downloading.
+The reason for this script was so that I could stream a file from my server while the server was still downloading it.   To stream the file it requires that the server report the full file size.  The issue with wget by itself is that it doesn't initialize the size of the file before it starts downloading, instead the file size increases _as_ it is downloading.  This script fixes that so I can use my servers fast connection to download it and stream it from my server while it is downloading.
