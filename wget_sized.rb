@@ -7,6 +7,7 @@ IO.popen("wget \"#{ARGV*'" "'}\" 2>&1") do |p|
   end.delete(',')
   file_name = data.scan(/=> `(.+?)'\r?\n/m).last
 
+  # set file size
   system("dd of=\"#{file_name}\" seek=#{length} bs=1 count=0 if=/dev/null")
 
   print data
